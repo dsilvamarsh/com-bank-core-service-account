@@ -2,12 +2,14 @@ package com.bank.core.service.config;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-public class ComBankCoreServiceAccountApplication {
+@ComponentScan(basePackages = {"com.bank.core.service"})
+public class Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ComBankCoreServiceAccountApplication.class, args);
+		SpringApplication.run(Application.class, args);
 	}
 
 }
